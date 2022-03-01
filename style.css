@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Menu */
+.header{
+    position: sticky;
+    width: 100%;
+    top:0;
+    z-index: 100;
+}
+.menu{
+    background-color: rgb(85, 83, 83);
+    height: 8vh;
+    border-bottom: 2px solid rgb(6, 252, 252);
+    box-shadow: 0 5px 15px rgb(6, 252, 252), 0 0 30px white ;
+}
+.ul-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 0.5rem;
+    list-style: none;
+    margin-right: 10vh;
+    right: 0;
+}
+.link-menu{
+    display: block;
+    height: 8vh;
+    color: white;
+    text-decoration: none;
+    line-height: 8vh;
+    padding: 0 5px;
+    transition: all 1s;
+}
+.link-menu:visited{
+    color: white;
+}
+
+/* Presentacion */
+.box{
+    background-color: aquamarine;
+    margin: 0 auto;
+    height: 40vh;
+    width: 90vw;
+    padding: 9vh 2vw;
+    border-bottom: solid 3px black;
+
+}
