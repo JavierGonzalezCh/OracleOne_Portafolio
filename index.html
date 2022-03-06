@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Logo.jpg">
     <title>Javier Gonzalez</title>
 </head>
 <body>
     <header class="header">
+        <img  class="logo" src="img/Logo.jpg" alt="" srcset="">
         <nav class="menu">
             <ul class="ul-menu">
-                <li class="li-menu"><a class="link-menu" href="#introduction">Presentacion</a></li>
+                <li class="li-menu"><a class="link-menu" href="#introduction">Inicio</a></li>
                 <li class="li-menu"><a class="link-menu" href="#about">Acerca de mi</a></li>
-                <li class="li-menu"><a class="link-menu" href="#softskills">Habilidades Blandas</a></li>
+                <li class="li-menu"><a class="link-menu" href="#skills">Habilidades</a></li>
                 <li class="li-menu"><a class="link-menu" href="#formation">Formación</a></li>
                 <li class="li-menu"><a class="link-menu" href="#proyects">Proyectos</a></li>
                 <li class="li-menu"><a class="link-menu" href="#contact">Contacto</a></li>
@@ -21,42 +23,91 @@
         </nav>
     </header>
     <main>
-        <section class="box" id="introduction">
-            <div>
-                <h1>Hola Soy Javier!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta accusantium minus quas totam odit temporibus, sapiente voluptas numqu</p>
+        <section class="box intro" id="introduction">
+            <img class="banner" src="img/Banner.webp" alt="baner">
+            <div class="inicio">
+                <h1 class="titulo">Hola, soy Javier!</h1>
+                <p>Soy desarrollador web Full Stack, mi formación ha sido a través de varios bootcamps complementada con un fuerte estudio autónomo. Actualmente soy participante del proyecto Oracle ONE en Alura Latam</p>
+                <div class="redes">
+                    <a href="http://" target="_blank"><img src="img/iconos/github.png" alt="Github"></a>
+                    <a href="http://" target="_blank"><img src="img/iconos/linkedin.png" alt="LinkedIn"></a>
+                    <a href="http://" target="_blank"><img src="img/iconos/instagram.png" alt="Instagram"></a>
+                    <a href="http://" target="_blank"><img src="img/iconos/curriculum.png" alt="curriculum"></a>
+                </div>
             </div>
-            <img src="" alt="Foto de Perfil">
-            <div>
-                <a href="http://" target="_blank">Github</a>
-                <a href="http://" target="_blank">LinkeIn</a>
-                <a href="http://" target="_blank">Instagram</a>
-                <a href="http://" target="_blank">Curriculum</a>
+            <div class="perfil">
+                <img src="img/Foto.jpg" alt="Foto de Perfil" class="imgperfil">
+                <p>Javier Gonzalez Chima </br> Colombia <img src="img/col.svg"></p>
             </div>
-            <div>
-                <h2>Datos personales</h2>
-                <p>Javier Gonzalez Chima</p>
-                <p>26 años</p>
-                <p>Colombia</p>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quibusdam voluptatem velit eum in reiciendis! Unde dolores odio incidunt suscipit! Laudantium adipisci voluptatum quod nesciunt incidunt numquam porro ratione sequi!</p>
         </section>
         <section class="box" id="about">
-            <h2>Acerca de Mi</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium?</p>
+            <h2 class="subtitulo">Acerca de mi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, hic accusantium sunt tenetur, deleniti sint aut itaque amet quam, iste expedita eos saepe illo. Odio autem commodi nobis sit praesentium? </p>
         </section>
-        <section class="box" id="softskills">
-            <h2>Habilidades Blandas</h2>            
+        <section class="box" id="skills">
+            <h2 class="subtitulo">Habilidades</h2> 
+            <div class="skill-box">
+                <h3>Blandas</h3>
+                <div class="skill">
+                    <figure>
+                        <img src="img/iconos/teamwork.png" alt="Trabajo en equipo" srcset="">
+                        <figcaption>Trabajo en equipo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/iconos/liderazgo.png" alt="Liderazgo" srcset="">
+                        <figcaption>Liderazgo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/iconos/comunicacion.png" alt="Comunicacion" srcset="">
+                        <figcaption>Comunicacion</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/iconos/proactividad.png" alt="Proactividad" srcset="">
+                        <figcaption>Proactividad</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/iconos/tiempo.png" alt="Gestion del tiempo" srcset="">
+                        <figcaption>Gestion del tiempo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/iconos/puzzle.png" alt="Resolucion de problemas" srcset="">
+                        <figcaption>Resolucion de problemas</figcaption>
+                    </figure>
+                </div>                
+            </div>
+            <div class="skill-box">
+                <h3>Tecnicas</h3>
+                <div class="skill"> 
+                    <img src="https://img.icons8.com/color/144/000000/html-5--v1.png" alt="html"/>
+                    <img src="https://img.icons8.com/color/144/000000/css3.png" alt="css"/>
+                    <img src="https://img.icons8.com/color/144/000000/javascript--v1.png" alt="javascript"/>
+                    <img src="https://img.icons8.com/color/144/000000/nodejs.png" alt="node"/>
+                    <img src="https://img.icons8.com/color/144/000000/react-native.png" alt="react"/>
+                    <img src="https://img.icons8.com/color/144/000000/mongodb.png" alt="mongodb"/>
+                </div>
+            </div>           
         </section>
         <section class="box" id="formation">
-            <h2>Formacion</h2>
+            <h2 class="subtitulo">Formacion</h2>
+            <div class="formations">
+                <figure class="item-formation">
+                    <figcaption>Mision TIC 2022</figcaption>
+                    <img src="img/Mision-tic.png" alt="" srcset="">
+                    <p>2021 - Finalizado</p>
+                </figure>
+                <figure class="item-formation">
+                    <figcaption>OracleOne-Alura</figcaption>
+                    <img src="img/OracleOne-Alura.png" alt="" srcset="">
+                    <p>2022 - En curso</p>
+                </figure> 
+            </div>
         </section>
         <section class="box" id="proyects">
-            <h2>Proyecto</h2>
+            <h2 class="subtitulo">Proyectos</h2>
         </section>
         <section class="box">
-            <h2>Contacto</h2>
-            <form  action="" id="contact">
+            <h2 class="subtitulo">Contacto</h2>
+            <form class="contact" action="" id="contact">
                 <label for="name">Dime quien eres!</label>
                 <input id="name" type="text" placeholder="Nombre">
                 <label for="email">Donde te puedo contactar?</label>
@@ -64,13 +115,10 @@
                 <label for="topic">Sobre que quieres que hablemos?</label>
                 <input id="topic" type="text" placeholder="Tema">
                 <label for="message">Dejame un lindo Mensaje!</label>
-                <textarea id="message" id="" cols="30" rows="10"></textarea>
-                <button type="submit"></button>
+                <textarea id="message" maxlength="500" rows="4" placeholder="Maximo 500 caracteres"></textarea>
+                <button type="submit" class="submit">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
-        Desarrollado por Javier Gonzalez
-    </footer>
 </body>
 </html>
