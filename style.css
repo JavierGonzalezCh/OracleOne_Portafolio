@@ -8,28 +8,37 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url("img/Fondo.jpg");
-    background-size: cover;
-    overflow-x: hidden;   
+    background: linear-gradient(black, darkblue); 
+    overflow-x: hidden;    
 }
 
 /* Header */
 .header{
     position: sticky;
+    background-color: rgb(13, 32, 47);
+    transition: all 0.5s;
     width: 100%;
+    height: 90px;
     top:0;
     z-index: 100;
+    border-bottom: 2px solid rgb(44, 135, 180);
+    padding-top: 10px;
+    box-shadow: 0 5px 15px rgb(44, 135, 180), 0 0 30px white ;
+    overflow-y: hidden;
 }
+
 .logo{
     position: absolute;
     left: 5vw;
     top: 2px;
+    margin-top: 10px;
 }
-.menu{
-    background-color: rgb(13, 32, 47);
+.icon-menu{
     height: 80px;
-    border-bottom: 2px solid rgb(44, 135, 180);
-    box-shadow: 0 5px 15px rgb(44, 135, 180), 0 0 30px white ;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: none;
 }
 .ul-menu{
     display: flex;
@@ -60,60 +69,58 @@ body{
     padding: 100px 2vw 0px;
 }
 
-/* Introduccion */
+/* Home */
 .intro{
     display: grid;
+    background: url("img/otros/Banner.webp");
+    background-size: cover;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-}
-.banner{
-    position: relative;
-    left: -6vw;
-    top: -100px;
+    height: 70vh;
     width: 100vw;
-    height: 30vh;
-    grid-column: 1/-1;
-    grid-row: 1;
 }
-.titulo{
+.title{
     font-size: 4rem;
 }
-.inicio {
+.home {
     grid-column: 1 / -2;
     grid-row: 2;
 }
-.redes{
+.networks{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-.redes a{
+.networks a{
     margin: 0 10px;
 }
-.perfil{
+.networks a:hover{
+    margin: 0 10px;
+    transform: scale(1.2);
+}
+.profile{
     text-align: center;
     grid-column: -2;
     grid-row: 2;
     margin: 0 auto;
 }
-.imgperfil{
+.imgprofile{
     width: 50%;
     min-width: 180px;
     border-radius: 50%;
 }
-.datos-personales{
-    grid-column: 3 / 4;
-    grid-row: 3;
-}
-.subtitulo{
+.subtitle{
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
 /* Acerca de mi */
-
+.about i{
+    font-size: 1.4rem;
+    color: rgb(108, 192, 235);
+}
 
 /* Habilidades */
 .skill-box{
@@ -136,18 +143,25 @@ body{
     padding: 10px;
     background-color: rgb(108, 192, 235);
     margin: 0 auto;
+    transition: all .5s;
 }
 .skill figure figcaption{
     color: rgb(13, 32, 47);
 }
 .skill img{
     margin: 0 auto;
+    transition: all 0.5s;
+}
+.skill-image:hover{
+    transform: scale(1.2);
 }
 
 /* Formación */
 .formations{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
     color: rgb(13, 32, 47);
     margin: 0 auto;
@@ -156,10 +170,10 @@ body{
     text-align: center;
     border-radius: 30% ;
     width: 25%;
+    min-width: 240px;
     padding: 20px;
     background-color: rgb(14, 1, 83);   
-    border: solid 3px rgb(108, 192, 235);
-    
+    border: solid 3px rgb(108, 192, 235); 
 }
 .item-formation figcaption{
     font-size: 1.5rem;
@@ -171,11 +185,65 @@ body{
     color: white;
 }
 
+/* Proyectos */
+
+.project{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto 0;
+    width: 80%;
+    height: 50vh;
+    min-height: 300px;
+}
+.project:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.figproject{
+    width: 70%;
+    
+}
+.imgproject{
+    margin: auto;
+    width: 70%;
+}
+.descrproject{
+    width: 29%;
+    height: 99%;
+}
+.descrproject h3{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.descrproject p{
+    margin: 5%;
+}
+.descrproject a{
+    display: inline-block;
+    margin: 5px;
+    padding: 3px;
+    transition: all 0.1s;
+}
+.descrproject a:hover{
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid white;
+    transform: scale(1.1)
+}
+
 /* Formulario de contacto */
 .contact{
     display: flex;
     flex-direction: column;
-    
+}
+.messageError{
+    list-style: none;
+}
+.messageError li{
+    background-color: rgb(243, 191, 191);
+    color: red;
+    margin-bottom: 5px;
+    border: 1px solid red;
 }
 .contact input{
     height: 1.3rem;
@@ -191,4 +259,49 @@ body{
     margin-bottom: 10vh;
     width: 300px;
     color: black;
+}
+
+/* Responsive */
+@media (max-width:1000px) {
+    .header-responsive{
+        height: 130px;
+    }
+    .icon-menu{
+        display: block;
+    }
+    .ul-menu{
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    .link-menu{
+        height: 1.2rem;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto 0;
+        width: 100%;;
+        height: 50vh;
+        min-height: 300px;
+    }
+    .figproject{
+        width: 100%;
+        display: flex;
+    }
+    .imgproject{
+        height: 100%;
+    }
+    .descrproject{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .descrproject p{
+        margin: 0 5%;
+    }
+    .project:nth-child(2n){
+        flex-direction: column;
+    }
 }
